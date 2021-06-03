@@ -2,12 +2,12 @@ const Discord = require("discord.js")
 
 const cevaplar = [
 
-"Biliyor muydun? Space Giveaway Aslında Sade Çekiliş Botu İdi" 
-"Biliyor muydun? Space Giveaway Sahibi iUgur UwU" 
-"Biliyor muydun? Aslında ben çok ünlüyüm UwUU" 
-"Biliyor muydun? Space Giveaway sahibi çok dadlu :3" 
-"Biliyor muydun? Bu bota katkıda bulunan bazı insanlar var." 
-"Biliyor muydun? Space Giveaway Aslında genel bir bot" 
+"Biliyor muydun? Space Giveaway Aslında Sade Çekiliş Botu İdi", 
+"Biliyor muydun? Space Giveaway Sahibi iUgur UwU", 
+"Biliyor muydun? Aslında ben çok ünlüyüm UwUU", 
+"Biliyor muydun? Space Giveaway sahibi çok dadlu :3", 
+"Biliyor muydun? Bu bota katkıda bulunan bazı insanlar var.", 
+"Biliyor muydun? Space Giveaway Aslında genel bir bot", 
 
 ];
 
@@ -27,7 +27,7 @@ Promise.all(promises)
 		const totalMembers = results[1].reduce((acc, memberCount) => acc + memberCount, 0);
 		
                  const embed = new Discord.MessageEmbed() 
-                 .addField("> Toplam Bilgiler", random) 
+                 .addField("> Toplam Bilgiler", "[Destek Sunucum](https://discord.gg/KZfAEjrPUF)") 
                  .addField("Toplam Sunucu", totalGuilds) 
                  .addField("Toplam Kullanıcı", totalMembers) 
                  .addField("Bu Sunucunun Shard İd' si", client.shard.ids) 
