@@ -1,6 +1,20 @@
 const Discord = require("discord.js") 
 
+const cevaplar = [
+
+"Biliyor muydun? Space Giveaway Aslında Sade Çekiliş Botu İdi" 
+"Biliyor muydun? Space Giveaway Sahibi iUgur UwU" 
+"Biliyor muydun? Aslında ben çok ünlüyüm UwUU" 
+"Biliyor muydun? Space Giveaway sahibi çok dadlu :3" 
+"Biliyor muydun? Bu bota katkıda bulunan bazı insanlar var." 
+"Biliyor muydun? Space Giveaway Aslında genel bir bot" 
+
+];
+
 exports.run = async (client, message, args) => {
+
+var soru = args.join(' ');
+    var random = cevaplar[Math.floor(Math.random() * cevaplar.length)];
 
 const promises = [
 	client.shard.fetchClientValues('guilds.cache.size'),
